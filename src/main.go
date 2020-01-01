@@ -1,29 +1,28 @@
 package main
 
 import (
-  "net/http"
+  //"net/http"
+  "log"
 
   "github.com/gin-gonic/contrib/static"
   "github.com/gin-gonic/gin"
 )
 
 func main() {
-  // Set the router as the default one shipped with Gin
+  log.Print("App Started...")
+
   router := gin.Default()
 
-  // Serve frontend static files
-  router.Use(static.Serve("/", static.LocalFile("./views", true)))
+  router.Use(static.Serve("/", static.LocalFile("./public", true)))
 
-  // Setup route group for the API
   api := router.Group("/api")
   {
-    api.GET("/", func(c *gin.Context) {
-      c.JSON(http.StatusOK, gin.H {
-        "message": "pong",
+      api.GET("/events", func(c *gin.Context) {
+          c.JSON(200, gin.H{
+              "message": "pong",
+          })
       })
-    })
   }
 
-  // Start and run the server
   router.Run(":3000")
 }
