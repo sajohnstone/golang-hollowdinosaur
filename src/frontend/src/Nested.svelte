@@ -1,1 +1,0 @@
-<p>This is an imported component</p>

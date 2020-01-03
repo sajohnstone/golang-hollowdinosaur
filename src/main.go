@@ -4,7 +4,6 @@ import (
 	"net/http"
 	"net"
 	"log"
-	"fmt"
 
   "github.com/gin-gonic/contrib/static"
   "github.com/gin-gonic/gin"
@@ -22,7 +21,7 @@ func main() {
       api.GET("/whoami", func(c *gin.Context) {
 				var ip = getIPAdress(c.Request);
 				c.JSON(200, gin.H{
-						"message": "Your IP is " + ip,
+						"message": ip,
 				})
 		})
 	}
@@ -31,10 +30,9 @@ func main() {
 }
 
 func getIPAdress(req *http.Request) string {
-
 	ip, port, err := net.SplitHostPort(req.RemoteAddr)
+	_ = port //ignore the fact port isnt declared
 
-	log.Print(fmt.Sprintf("%d-%d-%d", ip, port, err))
 	if err != nil {
 			return "Unknown"
 	}

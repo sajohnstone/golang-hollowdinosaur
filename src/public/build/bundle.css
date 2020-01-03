@@ -1,4 +1,4 @@
-main.svelte-1tky8bj{text-align:center;padding:1em;max-width:240px;margin:0 auto}h1.svelte-1tky8bj{color:#ff3e00;text-transform:uppercase;font-size:4em;font-weight:100}@media(min-width: 640px){main.svelte-1tky8bj{max-width:none}}
-p.svelte-jt0jfb{color:purple;font-family:'Comic Sans MS', cursive;font-size:2em}
+h1.svelte-ru8qee{color:#34495e}.splash-container.svelte-ru8qee{background:#1f8dd6;z-index:1;overflow:hidden;width:100%;height:88%;top:0;left:0;position:fixed !important}.splash.svelte-ru8qee{width:80%;height:50%;margin:auto;position:absolute;top:100px;left:0;bottom:0;right:0;text-align:center;text-transform:uppercase}.splash-head.svelte-ru8qee{font-size:20px;font-weight:bold;color:white;border:3px solid white;padding:1em 1.6em;font-weight:100;border-radius:5px;line-height:1em}.splash-subhead.svelte-ru8qee{color:white;letter-spacing:0.05em;opacity:0.8}@media(min-width: 48em){.splash.svelte-ru8qee{width:50%;height:50%}.splash-head.svelte-ru8qee{font-size:250%}}@media(min-width: 78em){.splash-head.svelte-ru8qee{font-size:300%}}
+.sitetitle.svelte-iuwdy6{color:#f35626;background-image:linear-gradient(92deg, #f35626 0%,#feab3a 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;font-size:3rem;line-height:1}
 
 /*# sourceMappingURL=bundle.css.map */
