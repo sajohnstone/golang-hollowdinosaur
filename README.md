@@ -1,10 +1,26 @@
 # golang-hollowdinosaur
 
-Run the code:
+A simple example using Go and Svelte that generates an Avatar.
+
+## Run the code:
 
 ```
-go install
-go run ./src/main.go
+./build.sh
+```
+
+To debug the frontend you can 
+```
+cd ./src/frontend
+npm run start
+cd ../../
+./build.sh
+```
+
+## add dependacies
+
+```
+go get "github.com/gin-gonic/contrib/static"
+go get "github.com/gin-gonic/gin"
 ```
 
 Try inserting a value with
