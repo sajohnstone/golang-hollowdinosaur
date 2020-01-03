@@ -16,7 +16,6 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "animate.css": "^3.7.2",
     "sirv-cli": "^0.4.4"
   }
 }
